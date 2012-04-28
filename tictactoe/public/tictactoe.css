@@ -1,0 +1,56 @@
+#board {
+    float: left;
+    width : 366px;
+    min-height : 366px;
+    display : table-cell;
+    vertical-align: middle;
+    text-align : center;
+    font-size : 1.5em;
+    background-color : black;
+}
+
+.cell {
+    min-height: 120px;
+    width: 120px;
+    float: left;
+    margin: 1px;
+    display : table-cell;
+    vertical-align: middle;
+    background-color: white;
+    text-align : center;
+    line-height : 120px;
+}
+
+#panel {
+    margin-left: 100px;
+    float: left;
+}
+
+#status {
+    margin-bottom: 20px;
+}
+
+#newgame {
+    margin-bottom: 20px;
+}
+
+.href {
+    color: blue
+}
+
+.href:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.mouseover1 {
+    background-color : red;
+}
+
+.mouseover2 {
+    background-color : green;
+}
+
+.invisible {
+    display : none;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CMPSCI 390WP HW2 - Tic Tac Toe</title>
+<link rel="stylesheet" type="text/css" href="tictactoe.css" />
+</head>
+<body>
+<div id="board"></div>
+<div id="panel">
+<div id="status">
+    <div class="player">
+        Player 1 (X) : <div id="player1">0</div>
+    </div>
+    <div class="player">
+        Player 2 (O) : <div id="player2">0</div>
+    </div>
+    Draws : <div id="draws">0</div>
+</div>
+<div id="newgame">
+    <div class="href" onclick="tictactoe.newGame(1);">New game - Player 1 starts</div>
+    <div class="href" onclick="tictactoe.newGame(2);">New game - Player 2 starts</div>
+</div>
+<div id="gamehistory" class="invisible">
+    Game history:
+    <div class="href" id="prevgame" onclick="tictactoe.prevGame();">Previous game</div>
+    <div class="href" id="nextgame" onclick="tictactoe.nextGame();">Next game</div>
+</div> <!-- /panel -->
+<script type="text/javascript" src="util.js"></script>
+<script type="text/javascript" src="tictactoe.js"></script>
+</body>
+</html>

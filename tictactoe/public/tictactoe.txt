@@ -1,0 +1,25 @@
+Anna Lee
+CMPSCI390WP
+Prof Timothy Richards
+Assignment 2 - Tic Tac Toe
+
+Global variables:
+There are only two global variables, tictactoe and util, which are like modules. util defines a couple of functions on arrays, and tictactoe is for the actual game.
+
+Major Data Structures:
+- Player. This is a small data structure that simply includes the player number (1 or 2), the number of wins, and the player name, or 'title'.
+- Game. This is a data structure that includes all the moves made in the game, a function to construct a board for the game, and various other functions for manipulating one game.
+- games. This is an array containing all the previous Game objects, and which thus contains all game board history.
+- draws. This is a number containing the number of draws.
+- cells. This is an array containing the 9 html cells on the board.
+
+Functions:
+- symbolForPlayer, getPlayer and otherPlayer are local functions defined in tictactoe that manipulate player information.
+- endGame, checkPlayerWon and checkBoardFilled work together to detect end of game.
+- endGame and newGame functions finish and reset the game.
+- selectCell, resetCell and stopCellEvents deal with events for the cells.
+- populateCells recreates the board from a past game in the history.
+- The only functions that tictactoe exports are newGame, prevGame (for displaying the previous game in the history), and nextGame (for displaying the next game in the history).
+
+
+I also just want to note that in the previous version of my game, I did same game history, I just didn't display it.
